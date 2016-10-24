@@ -41,12 +41,12 @@ The following is a simple guide for setting up [GitLab CE](https://about.gitlab.
 
 #### [NGINX](nginx.conf)
 
-| *Setting*             | *Description*               | *Notes*                                                                             |
-|-----------------------|-----------------------------|-------------------------------------------------------------------------------------|
-| `server_name`         | Server name                 | Should match the `external_url` setting in `gitlab.rb` (minus `http://`/`https://`) |
-| `ssl_certificate`     | Path to SSL certificate     |                                                                                     |
-| `ssl_certificate_key` | Path to SSL certificate key |                                                                                     |
-| `ssl_dhparam`         | Path to DHE file            | Generate via `openssl dhparam -out /path/to/dhparam.pem 4096`                       |
+| *Setting*             | *Description*               | *Notes*                                                                                          |
+|-----------------------|-----------------------------|--------------------------------------------------------------------------------------------------|
+| `server_name`         | Server name                 | Should match the `external_url` setting in `gitlab.rb` (domain only, no `http://` or `https://`) |
+| `ssl_certificate`     | Path to SSL certificate     |                                                                                                  |
+| `ssl_certificate_key` | Path to SSL certificate key |                                                                                                  |
+| `ssl_dhparam`         | Path to DHE file            | Generate via `openssl dhparam -out /path/to/dhparam.pem 4096`                                    |
 
 ## Upgrading
 
